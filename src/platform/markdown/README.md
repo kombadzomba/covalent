@@ -2,6 +2,8 @@
 
 `<td-markdown>` is an @angular component for Github flavored Javascript Markdown to HTML converter. It is based on [showdown](https://github.com/showdownjs/showdown/) library.
 
+IMPORTANT NOTE: This package is extension of [@covalent/markdown](https://www.npmjs.com/package/@covalent/markdown) modified to be importable in Meteor 1.4.3.2
+
 ## API Summary
 
 Methods:
@@ -21,7 +23,7 @@ By default, `--dev` build will log the following message in the console to let y
 This component can be installed as npm package.
 
 ```bash
-npm i -save @covalent/markdown
+npm i -save @enelit/markdown
 ```
 
 ## Setup
@@ -45,7 +47,7 @@ npm i -save @covalent/markdown
 Then, import the **[CovalentMarkdownModule]** using the *forRoot()* method in your NgModule:
 
 ```typescript
-import { CovalentMarkdownModule } from '@covalent/markdown';
+import { CovalentMarkdownModule } from '@enelit/markdown';
 @NgModule({
   imports: [
     CovalentMarkdownModule.forRoot(),
@@ -61,8 +63,8 @@ export class MyModule {}
 The `markdown` module comes with its own `covalent` theme which uses the material *theme* which is used by importing our theme scss file.
 
 ```css
-@import '~@angular/material/core/theming/all-theme';
-@import '~@covalent/markdown/markdown-theme';
+@import '{}/node_modules/@angular/material/core/theming/all-theme';
+@import '{}/node_modules/@enelit/markdown/markdown-theme';
 
 @include md-core();
 

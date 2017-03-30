@@ -27,7 +27,7 @@ Properties:
 Import the [CovalentDataTableModule] using the forRoot() method in your NgModule:
 
 ```typescript
-import { CovalentDataTableModule } from '@covalent/core';
+import { CovalentDataTableModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     CovalentDataTableModule.forRoot(), // or CovalentCoreModule.forRoot() (included inside of it)

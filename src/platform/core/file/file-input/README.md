@@ -50,7 +50,7 @@ Import the [CovalentFileModule] using the forRoot() method in your NgModule:
 
 ```typescript
 import { HttpModule } from '@angular/http';
-import { CovalentFileModule } from '@covalent/core';
+import { CovalentFileModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     HttpModule,

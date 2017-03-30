@@ -1,7 +1,7 @@
 {
-  "name": "@covalent/http",
+  "name": "@enelit/http",
   "version": "1.0.0-beta.2",
-  "description": "Teradata UI Platform Http Helper Module",
+  "description": "Teradata UI Platform Http Helper Module - branch importable in Meteor 1.4.3.2",
   "main": "./http.umd.js",
   "module": "./index.js",
   "typings": "./index.d.ts",
@@ -21,20 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/teradata/covalent.git"
+    "url": "https://github.com/kombadzomba/covalent.git"
   },
   "bugs": {
     "url": "https://github.com/teradata/covalent/issues"
   },
   "license": "MIT",
-  "author": "Teradata UX",
+  "author": "Enel IT Solutions",
   "contributors": [
-    "Kyle Ledbetter <kyle.ledbetter@teradata.com>",
-    "Richa Vyas <richa.vyas@teradata.com>",
-    "Ed Morales <eduardo.morales@teradata.com>",
-    "Jason Weaver <jason.weaver@teradata.com>",
-    "Jeremy Wilken <jeremy.wilken@teradata.com>",
-    "Jeremy Smartt <jeremy.smartt@teradata.com>"
+    "Milos Micic <kombadzomba@gmail.com>"
   ],
   "peerDependencies": {
     "@angular/core": "^2.4.5",

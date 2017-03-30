@@ -45,7 +45,7 @@ gulp.task('rollup-code', '', function() {
     'rxjs/Observable': 'Rx'
   };
   components.forEach(name => {
-    globals[`@covalent/${name}`] = `td.${camelCase(name)}`
+    globals[`@enelit/${name}`] = `td.${camelCase(name)}`
   });
 
   // Build all of them asynchronously.
@@ -55,7 +55,7 @@ gulp.task('rollup-code', '', function() {
         return rollup({
           entry: path.join(config.paths.deployed, name, 'index.js'),
           context: 'window',
-          external: Object.keys(globals).concat(components.map(name => `@covalent/${name}`))
+          external: Object.keys(globals).concat(components.map(name => `@enelit/${name}`))
         });
       })
       .then((bundle) => {

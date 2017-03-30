@@ -3,9 +3,9 @@ import { Component, Directive, AfterViewInit, ElementRef, Input, Renderer, Secur
 import { DomSanitizer } from '@angular/platform-browser';
 
 import { MdCheckbox } from '@angular/material';
-import { TdHighlightComponent } from '@covalent/highlight';
-import { TdMarkdownComponent } from '@covalent/markdown';
-import { TdDataTableComponent, TdDataTableSortingOrder, ITdDataTableSortChangeEvent } from '@covalent/core';
+import { TdHighlightComponent } from '@enelit/highlight';
+import { TdMarkdownComponent } from '@enelit/markdown';
+import { TdDataTableComponent, TdDataTableSortingOrder, ITdDataTableSortChangeEvent } from '@enelit/covalent-core';
 
 @Directive({
   selector: '[tdPrettyMarkdownContainer]',

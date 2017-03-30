@@ -1,6 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { slideInDownAnimation } from '../../../app.animations';
-import { TdDynamicType, ITdDynamicElementConfig, TdDynamicElement } from '@covalent/dynamic-forms';
+import { TdDynamicType, ITdDynamicElementConfig, TdDynamicElement } from '@enelit/dynamic-forms';
 
 @Component({
   selector: 'dynamic-forms-demo',

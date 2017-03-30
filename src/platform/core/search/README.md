@@ -57,7 +57,7 @@ Example for HTML usage:
 Import the [CovalentSearchModule] using the forRoot() method in your NgModule:
 
 ```typescript
-import { CovalentSearchModule } from '@covalent/core';
+import { CovalentSearchModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     CovalentSearchModule.forRoot(), // or CovalentCoreModule.forRoot() (included inside of it)

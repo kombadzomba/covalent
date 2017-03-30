@@ -1,5 +1,7 @@
 # td-dynamic-forms
 
+IMPORTANT NOTE: This package is extension of [@covalent/dynamic-forms](https://www.npmjs.com/package/@covalent/dynamic-forms) modified to be importable in Meteor 1.4.3.2
+
 ## API Summary
 
 Properties:
@@ -19,7 +21,7 @@ Properties:
 Import the [CovalentDynamicFormsModule] using the forRoot() method in your NgModule:
 
 ```typescript
-import { CovalentDynamicFormsModule } from '@covalent/dynamic-forms';
+import { CovalentDynamicFormsModule } from '@enelit/dynamic-forms';
 @NgModule({
   imports: [
     CovalentDynamicFormsModule.forRoot(),
@@ -57,7 +59,7 @@ Example for HTML usage:
  ```
 
 ```typescript
-import { ITdDynamicElementConfig, TdDynamicElement, TdDynamicType } from '@covalent/dynamic-forms';
+import { ITdDynamicElementConfig, TdDynamicElement, TdDynamicType } from '@enelit/dynamic-forms';
 ...
 })
 export class Demo {

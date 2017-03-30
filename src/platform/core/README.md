@@ -4,13 +4,14 @@ Core Teradata UI Platform for layouts, icons, custom components and themes. This
 
 The core will have custom components that enforce standards and best practices through built-in design patterns.
 
+!!!IMPORTANT NOTE: This package is extension of [@covalent/core](https://www.npmjs.com/package/@covalent/core) modified to be importable in Meteor 1.4.3.2
 
 ## Installation
 
 This component can be installed as npm package.
 
 ```bash
-npm i -save @covalent/core
+npm i -save @enelit/covalent-core
 ```
 
 
@@ -19,7 +20,7 @@ npm i -save @covalent/core
 Import the **[CovalentCoreModule]** using the *forRoot()* method in your NgModule:
 
 ```typescript
-import { CovalentCoreModule } from '@covalent/core';
+import { CovalentCoreModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     CovalentCoreModule.forRoot(),
@@ -35,4 +36,4 @@ export class MyModule {}
 
 See [theming](https://teradata.github.io/covalent/#/docs/theme) in the covalent docs for more info
 
-Core Teradata UI Platform comes with a base CSS file `@covalent/core/common/platform.css` (includes icons). 
+Core Teradata UI Platform comes with a base CSS file `@enelit/covalent-core/common/platform.css` (includes icons). 

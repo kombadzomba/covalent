@@ -1,5 +1,5 @@
 import { Component, HostBinding, AfterViewInit, ChangeDetectionStrategy } from '@angular/core';
-import { TdMediaService } from '@covalent/core';
+import { TdMediaService } from '@enelit/covalent-core';
 
 import { fadeAnimation } from '../../../app.animations';
 

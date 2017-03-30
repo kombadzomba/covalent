@@ -1,5 +1,7 @@
 # HttpInterceptorService
 
+IMPORTANT NOTE: This package is extension of [@covalent/http](https://www.npmjs.com/package/@covalent/http) modified to be importable in Meteor 1.4.3.2
+
 ## API Summary
 
 Methods:
@@ -36,7 +38,7 @@ Create your custom interceptors by implementing [IHttpInterceptor]:
 
 ```typescript
 import { Injectable } from '@angular/core';
-import { IHttpInterceptor } from '@covalent/http';
+import { IHttpInterceptor } from '@enelit/http';
 
 @Injectable()
 export class CustomInterceptor implements IHttpInterceptor {
@@ -78,7 +80,7 @@ Then, import the [CovalentHttpModule] using the forRoot() method with the desire
 ```typescript
 import { NgModule, Type } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { CovalentHttpModule, IHttpInterceptor } from '@covalent/http';
+import { CovalentHttpModule, IHttpInterceptor } from '@enelit/http';
 import { CustomInterceptor } from 'dir/to/interceptor';
 
 const httpInterceptorProviders: Type<IHttpInterceptor>[] = [
@@ -185,7 +187,7 @@ Example:
 ```typescript
 import { Injectable } from '@angular/core';
 import { Response, Http, Headers } from '@angular/http';
-import { RESTService, HttpInterceptorService } from '@covalent/http';
+import { RESTService, HttpInterceptorService } from '@enelit/http';
 
 @Injectable()
 export class CustomRESTService extends RESTService<any> {

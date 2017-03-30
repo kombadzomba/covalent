@@ -3,7 +3,7 @@ import { Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Subscriber } from 'rxjs/Subscriber';
 
-import { HttpInterceptorService } from '@covalent/http';
+import { HttpInterceptorService } from '@enelit/http';
 
 export interface IGithubRepository {
   stargazers_count: number;

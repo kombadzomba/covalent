@@ -22,7 +22,7 @@ Properties:
 Import the [CovalentJsonFormatterModule] using the forRoot() method in your NgModule:
 
 ```typescript
-import { CovalentJsonFormatterModule } from '@covalent/core';
+import { CovalentJsonFormatterModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     CovalentJsonFormatterModule.forRoot(),  // or CovalentCoreModule.forRoot() (included inside of it)

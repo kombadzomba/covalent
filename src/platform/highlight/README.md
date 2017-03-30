@@ -4,6 +4,8 @@
 
 This implementation supports all the Common languages in *highlight.js*.
 
+IMPORTANT NOTE: This package is extension of [@covalent/highlight](https://www.npmjs.com/package/@covalent/highlight) modified to be importable in Meteor 1.4.3.2
+
 ## API Summary
 
 Properties:
@@ -24,7 +26,7 @@ By default, `--dev` build will log the following message in the console to let y
 This component can be installed as npm package.
 
 ```bash
-npm i -save @covalent/highlight
+npm i -save @enelit/highlight
 ```
 
 ## Setup
@@ -32,7 +34,7 @@ npm i -save @covalent/highlight
 Import the **[CovalentHighlightModule]** using the *forRoot()* method in your NgModule:
 
 ```typescript
-import { CovalentHighlightModule } from '@covalent/highlight';
+import { CovalentHighlightModule } from '@enelit/highlight';
 
 @NgModule({
   imports: [
@@ -49,7 +51,7 @@ export class MyModule {}
 The `highlight` module comes with its own default `covalent` theme which you can use by importing our theme scss file.
 
 ```css
-@import '~@covalent/highlight/highlight-theme';
+@import '{}/node_modules/@enelit/highlight/highlight-theme';
 
 @include covalent-highlight-theme();
 ```

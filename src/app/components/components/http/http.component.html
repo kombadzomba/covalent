@@ -32,7 +32,7 @@
     <td-highlight lang="typescript">
       <![CDATA[
         import { Injectable } from '@angular/core';
-        import { IHttpInterceptor } from '@covalent/http';
+        import { IHttpInterceptor } from '@enelit/http';
 
         @Injectable()
         export class CustomInterceptor implements IHttpInterceptor {
@@ -75,7 +75,7 @@
       <![CDATA[
         import { NgModule, Type } from '@angular/core';
         import { HttpModule } from '@angular/http';
-        import { CovalentHttpModule, IHttpInterceptor } from '@covalent/http';
+        import { CovalentHttpModule, IHttpInterceptor } from '@enelit/http';
         import { CustomInterceptor } from 'dir/to/interceptor';
 
         const httpInterceptorProviders: Type<IHttpInterceptor>[] = [
@@ -186,7 +186,7 @@ Example 4
       <![CDATA[
         import { Injectable } from '@angular/core';
         import { Response, Http, Headers } from '@angular/http';
-        import { RESTService, HttpInterceptorService } from '@covalent/http';
+        import { RESTService, HttpInterceptorService } from '@enelit/http';
 
         @Injectable()
         export class CustomRESTService extends RESTService<any> {

@@ -44,11 +44,11 @@
   ```
   npm install --save https://github.com/Teradata/covalent-nightly.git
   ```
-* **covalent-data:** new `0.7.0` [@covalent/data](https://github.com/Teradata/covalent-data) release. 
+* **covalent-data:** new `0.7.0` [@enelit/data](https://github.com/Teradata/covalent-data) release. 
 * **data-table:** add a way to configure a specific column as `sortable`. ([3e24fcfd505395da2f18db2fe2dd96f5cc6e8b87](https://github.com/Teradata/covalent/commit/3e24fcfd505395da2f18db2fe2dd96f5cc6e8b87)), closes [#347](https://github.com/Teradata/covalent/issues/347)
 * **data-table:** leverage the `md-pseudo-checkbox` to render the selectable rows more efficiently. ([717d309d0a31f21c0dc9870ea3f3f3b40f248a07](https://github.com/Teradata/covalent/commit/717d309d0a31f21c0dc9870ea3f3f3b40f248a07))
 * **dependencies:** add documentation on how to use `ngx-translate` and `LOCALE_ID`. ([776331bb5bc4098a4264a36e1275b3c83727e61a](https://github.com/Teradata/covalent/commit/776331bb5bc4098a4264a36e1275b3c83727e61a))
-* **dependencies:** add `@angular/flex-layout` as a `@covalent/core` dependency. ([171a69dbc77e3cb02fee2cd38db314670015f3fe](https://github.com/Teradata/covalent/commit/171a69dbc77e3cb02fee2cd38db314670015f3fe)), closes [#239](https://github.com/Teradata/covalent/issues/239)
+* **dependencies:** add `@angular/flex-layout` as a `@enelit/covalent-core` dependency. ([171a69dbc77e3cb02fee2cd38db314670015f3fe](https://github.com/Teradata/covalent/commit/171a69dbc77e3cb02fee2cd38db314670015f3fe)), closes [#239](https://github.com/Teradata/covalent/issues/239)
 * **dependencies:** support [@angular/material@1.0.0-beta.2](https://github.com/angular/material2/blob/master/CHANGELOG.md#200-beta2-flannel-papaya-2017-02-15). ([717d309d0a31f21c0dc9870ea3f3f3b40f248a07](https://github.com/Teradata/covalent/commit/717d309d0a31f21c0dc9870ea3f3f3b40f248a07)), closes [#346](https://github.com/Teradata/covalent/issues/346)
 * **deployment:** make every `@angular` dependency a `peerDependency` except for `material` since its still beta. ([c05c45c2d83cc008233f81889ed5e873f9b98dde](https://github.com/Teradata/covalent/commit/c05c45c2d83cc008233f81889ed5e873f9b98dde))
 * **docs:** add browser support. ([0e2bb25ccc86388dbe4c4e42c68399f29c4ff05d](https://github.com/Teradata/covalent/commit/0e2bb25ccc86388dbe4c4e42c68399f29c4ff05d))
@@ -328,7 +328,7 @@ ngAfterViewInit(): void {
 ## Breaking Changes
 * **deploy:** Single core package. ([81901b23eca8e02330260b5831c64da3005a39fd](https://github.com/Teradata/covalent/commit/81901b23eca8e02330260b5831c64da3005a39fd)), closes [#166](https://github.com/Teradata/covalent/issues/166) and [#93](https://github.com/Teradata/covalent/issues/93)
 
-  - Created submodules of all core modules which are wrapped by one parent module CovalentCoreModule (`@covalent/core`)
+  - Created submodules of all core modules which are wrapped by one parent module CovalentCoreModule (`@enelit/covalent-core`)
     - CovalentCommonModule
     - CovalentChipsModule
     - CovalentDataTableModule
@@ -346,28 +346,28 @@ ngAfterViewInit(): void {
     - CovalentStepsModule
 
   - Stand alone modules:
-    - CovalentHttpModule (`@covalent/http`)
-    - CovalentDynamicFormsModule (`@covalent/dynamic-forms`)
-    - CovalentHighlightModule (`@covalent/highlight`)
-    - CovalentMarkdownModule (`@covalent/markdown`)
+    - CovalentHttpModule (`@enelit/http`)
+    - CovalentDynamicFormsModule (`@enelit/dynamic-forms`)
+    - CovalentHighlightModule (`@enelit/highlight`)
+    - CovalentMarkdownModule (`@enelit/markdown`)
   
-  - `markdown` is a separate module and its theme needs to be imported separatly `@import ~@covalent/markdown/markdown-theme'` and included `@include covalent-markdown-theme($theme);`
-  - `highlight` is a separate module and its theme needs to be imported separatly `@import ~@covalent/highlight/highlight-theme'` and included `@include covalent-highlight-theme();`
+  - `markdown` is a separate module and its theme needs to be imported separatly `@import ~@enelit/markdown/markdown-theme'` and included `@include covalent-markdown-theme($theme);`
+  - `highlight` is a separate module and its theme needs to be imported separatly `@import ~@enelit/highlight/highlight-theme'` and included `@include covalent-highlight-theme();`
 
   - `all-theme` and `platform.css` changed directories.
 
     Before: 
 
     ```scss
-    `~@covalent/core/styles/platform.css`
-    `~@covalent/core/styles/theming/all-theme';`
+    `~@enelit/covalent-core/styles/platform.css`
+    `~@enelit/covalent-core/styles/theming/all-theme';`
     ```
 
     After:
 
     ```scss
-    `@covalent/core/common/platform.css`
-    `~@covalent/core/theming/all-theme';`
+    `@enelit/covalent-core/common/platform.css`
+    `~@enelit/covalent-core/theming/all-theme';`
     ```
 
 * **http:** Path interceptors configuration. ([7db377e62254f6add6995065f09f4b5528bd0c16](https://github.com/Teradata/covalent/commit/7db377e62254f6add6995065f09f4b5528bd0c16)), closes [#194](https://github.com/Teradata/covalent/issues/194)
@@ -568,8 +568,8 @@ After:
 
 Example:
 ```scss
-@import '~@angular/material/core/theming/all-theme';
-@import '~@covalent/core/styles/theming/all-theme';
+@import '{}/node_modules/@angular/material/core/theming/all-theme';
+@import '{}/node_modules/@enelit/covalent-core/styles/theming/all-theme';
 
 @include md-core();
 
@@ -747,7 +747,7 @@ Usage:
 
 theme.scss content:
 ```scss
-@import '~@angular/material/core/theming/all-theme';
+@import '{}/node_modules/@angular/material/core/theming/all-theme';
 // Plus imports for other components in your app.
 
 // Include the base styles for Angular Material core. We include this here so that you only
@@ -896,7 +896,7 @@ After:
   Example SystemJS config with UMD bundles: 
 
   ```ts
-  '@covalent/core': {
+  '@enelit/covalent-core': {
       format: 'cjs',
       main: 'core.umd.js'
     }
@@ -1000,7 +1000,7 @@ more information.
 * **core:** Moved RESTService to **http** module ([2093930c45e7183280faea445fd5efd483fe3532](https://github.com/Teradata/covalent/commit/2093930c45e7183280faea445fd5efd483fe3532))
 * **loading:** Removed deprecated TimerWrapper and ComponentResolver and added usage of ComponentFactoryResolver. ([a013cd7a3d272f6836eea62fb26e69a8719469c1](https://github.com/Teradata/covalent/commit/a013cd7a3d272f6836eea62fb26e69a8719469c1))
 * **layouts:** Changing `<list-items>` and `<menu-items>` to use `<md-nav-list list-items>` and `<md-nav-list menu-items>` to be more flexible in layouts. ([1df3f42ead63a946e0c1749e66b06ef584e2dc79](https://github.com/Teradata/covalent/commit/1df3f42ead63a946e0c1749e66b06ef584e2dc79))
-* **dependencies:** All modules depend now on @covalent/core.
+* **dependencies:** All modules depend now on @enelit/covalent-core.
 
 ## Features
 
@@ -1028,7 +1028,7 @@ more information.
   e.g. 
 
   ```typescript
-  import { TD_LOADING_ENTRY_COMPONENTS } from '@covalent/core';
+  import { TD_LOADING_ENTRY_COMPONENTS } from '@enelit/covalent-core';
   ...
     precompile: [ TD_LOADING_ENTRY_COMPONENTS ],
   })

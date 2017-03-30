@@ -2,6 +2,8 @@
 
 `<td-charts>` is a directive for Ng2 + D3 V4 Chart. This is a parent element and all the charts would be rendered inside this.
 
+IMPORTANT NOTE: This package is extension of [@covalent/charts](https://www.npmjs.com/package/@covalent/charts) modified to be importable in Meteor 1.4.3.2
+
 ## API Summary
 
 Properties:
@@ -21,7 +23,7 @@ Properties:
 Import the [CovalentChartsModule] using the forRoot() method in your NgModule:
 
 ```typescript
-import { CovalentChartsModule } from '@covalent/charts';
+import { CovalentChartsModule } from '@enelit/charts';
 @NgModule({
   imports: [
     CovalentChartsModule.forRoot(),

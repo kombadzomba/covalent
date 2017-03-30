@@ -23,7 +23,7 @@
       "jasmine", "hammerjs", "rxjs"
     ],
     "paths": {
-      "@covalent/*": ["./*"]
+      "@enelit/*": ["./*"]
     },
     "noUnusedParameters": false,
     "noUnusedLocals": false,

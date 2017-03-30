@@ -8,7 +8,7 @@
 This component can be installed as npm package.
 
 ```bash
-npm i -save @covalent/core
+npm i -save @enelit/covalent-core
 ```
 
 
@@ -17,7 +17,7 @@ npm i -save @covalent/core
 Import the **[CovalentLayoutModule]** using the *forRoot()* method in your NgModule:
 
 ```typescript
-import { CovalentLayoutModule } from '@covalent/core';
+import { CovalentLayoutModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     CovalentLayoutModule.forRoot(), // or CovalentCoreModule.forRoot()

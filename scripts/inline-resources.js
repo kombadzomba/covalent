@@ -104,7 +104,7 @@ function inlineStyle(filePath, content) {
 }
 
 function replaceRelativePath(_, content) {
-  return content.replace(/((\.\.\/)+core)/gm, '@covalent/core');
+  return content.replace(/((\.\.\/)+core)/gm, '@enelit/covalent-core');
 }
 
 /**

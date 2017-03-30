@@ -22,7 +22,7 @@ Properties:
 Import the [CovalentChipsModule] using the forRoot() method in your NgModule:
 
 ```typescript
-import { CovalentChipsModule } from '@covalent/core';
+import { CovalentChipsModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     CovalentChipsModule.forRoot(), // or CovalentCoreModule.forRoot() (included inside of it)

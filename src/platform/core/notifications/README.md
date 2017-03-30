@@ -18,7 +18,7 @@ Properties:
 Import the [CovalentNotificationsModule] using the forRoot() method in your NgModule:
 
 ```typescript
-import { CovalentNotificationsModule } from '@covalent/core';
+import { CovalentNotificationsModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     CovalentNotificationsModule.forRoot(), // or CovalentCoreModule.forRoot() (included inside of it)

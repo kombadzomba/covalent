@@ -36,7 +36,7 @@ Properties:
 Import the [CovalentPagingModule] using the forRoot() method in your NgModule:
 
 ```typescript
-import { CovalentPagingModule } from '@covalent/core';
+import { CovalentPagingModule } from '@enelit/covalent-core';
 @NgModule({
   imports: [
     CovalentPagingModule.forRoot(), // or CovalentCoreModule.forRoot() (included inside of it)

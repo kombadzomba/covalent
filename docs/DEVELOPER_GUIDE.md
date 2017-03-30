@@ -22,7 +22,7 @@ Add a new directory based on the name to `src/platform/[name]` and it should con
 * `[name].component.html` - component markup
 * `[name].component.css` - component css (change extention to scss manually, we want scss files to compile)
 * `[name].component.spec.ts` - component unit test
-* `package.json` - configurations used for npm to publish it (name[@covalent/name], version, dependencies, etc)
+* `package.json` - configurations used for npm to publish it (name[@enelit/name], version, dependencies, etc)
 * `README.md` - readme file with documentation for github and npm registry.
 
 ## Adding a new documentation component

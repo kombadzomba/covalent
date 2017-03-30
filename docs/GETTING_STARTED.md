@@ -19,9 +19,9 @@ The new command creates a project with a build system for your Angular app.
 ## Install Covalent Core module 
 
 ```bash
-npm install --save @covalent/core
+npm install --save @enelit/covalent-core
 ## (optional) Additional Covalent Modules installs
-npm install --save @covalent/http @covalent/highlight @covalent/markdown @covalent/dynamic-forms 
+npm install --save @enelit/http @enelit/highlight @enelit/markdown @enelit/dynamic-forms 
 ```
 
 Playing with the latest changes from develop is also possible (for now, only the `core` module has a nightly build)
@@ -34,12 +34,12 @@ npm install --save https://github.com/Teradata/covalent-nightly.git
   
 **src/app/app.module.ts**
 ```ts
-import { CovalentCoreModule } from '@covalent/core';
+import { CovalentCoreModule } from '@enelit/covalent-core';
 // (optional) Additional Covalent Modules imports
-import { CovalentHttpModule } from '@covalent/http';
-import { CovalentHighlightModule } from '@covalent/highlight';
-import { CovalentMarkdownModule } from '@covalent/markdown';
-import { CovalentDynamicFormsModule } from '@covalent/dynamic-forms';
+import { CovalentHttpModule } from '@enelit/http';
+import { CovalentHighlightModule } from '@enelit/highlight';
+import { CovalentMarkdownModule } from '@enelit/markdown';
+import { CovalentDynamicFormsModule } from '@enelit/dynamic-forms';
 // other imports 
 @NgModule({
   imports: [
@@ -63,12 +63,12 @@ See the [material2 theming guide](https://github.com/angular/material2/blob/mast
 A theme file is a simple Sass file that defines your palettes and passes them to mixins that output the corresponding styles. A typical theme file will look something like this:
 
 ```css
-@import '~@angular/material/core/theming/all-theme';
-@import '~@covalent/core/theming/all-theme';
+@import '{}/node_modules/@angular/material/core/theming/all-theme';
+@import '{}/node_modules/@enelit/covalent-core/theming/all-theme';
 
 // (optional) Additional themes
-@import '~@covalent/markdown/markdown-theme';
-@import '~@covalent/highlight/highlight-theme';\
+@import '{}/node_modules/@enelit/markdown/markdown-theme';
+@import '{}/node_modules/@enelit/highlight/highlight-theme';\
 
 @include md-core();
 
@@ -99,7 +99,7 @@ and then include the output file in your application.
 The theme file can be concatenated and minified with the rest of the application's css.
 
 ## Configuring SystemJS
-If your project is using SystemJS for module loading, you will need to add `@covalent/core` 
+If your project is using SystemJS for module loading, you will need to add `@enelit/covalent-core` 
 to the SystemJS configuration:
 
 ```js
@@ -107,12 +107,12 @@ System.config({
   // existing configuration options
   map: {
     ...,
-    '@covalent/core': 'npm:@covalent/core/core.umd.js',
+    '@enelit/covalent-core': 'npm:@enelit/covalent-core/core.umd.js',
     // (optional) Additional configuration options
-    '@covalent/http': 'npm:@covalent/http/http.umd.js',
-    '@covalent/highlight': 'npm:@covalent/highlight/highlight.umd.js',
-    '@covalent/markdown': 'npm:@covalent/markdown/markdown.umd.js',
-    '@covalent/dynamic-forms': 'npm:@covalent/dynamic-forms/dynamic-forms.umd.js'
+    '@enelit/http': 'npm:@enelit/http/http.umd.js',
+    '@enelit/highlight': 'npm:@enelit/highlight/highlight.umd.js',
+    '@enelit/markdown': 'npm:@enelit/markdown/markdown.umd.js',
+    '@enelit/dynamic-forms': 'npm:@enelit/dynamic-forms/dynamic-forms.umd.js'
   }
 });
 ```
@@ -124,7 +124,7 @@ load the Material Design font in your `index.html`.
        
 **src/index.html**
 ```html
-<link href="../node_modules/@covalent/core/common/platform.css" rel="stylesheet">
+<link href="../node_modules/@enelit/covalent-core/common/platform.css" rel="stylesheet">
 ```
 
 or
@@ -132,7 +132,7 @@ or
 **.angular-cli.json**
 ```json
 "styles": [
-  "../node_modules/@covalent/core/common/platform.scss"
+  "../node_modules/@enelit/covalent-core/common/platform.scss"
 ],
 ```
 

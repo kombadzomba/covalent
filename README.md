@@ -1,5 +1,7 @@
 ## Covalent: UI Platform based on Angular-Material 2
 
+IMPORTANT NOTE: This package is extension of Teradata Covalent modified to be importable in Meteor 1.4.3.2
+
 [![Build Status](https://travis-ci.org/Teradata/covalent.svg?branch=develop)](https://travis-ci.org/Teradata/covalent)
 [![npm version](https://badge.fury.io/js/%40covalent%2Fcore.svg)](https://badge.fury.io/js/%40covalent%2Fcore)
 [![Join the chat at https://gitter.im/Teradata/covalent](https://badges.gitter.im/Teradata/covalent.svg)](https://gitter.im/Teradata/covalent?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
