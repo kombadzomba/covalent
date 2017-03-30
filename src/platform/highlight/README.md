@@ -51,7 +51,7 @@ export class MyModule {}
 The `highlight` module comes with its own default `covalent` theme which you can use by importing our theme scss file.
 
 ```css
-@import '{}/node_modules/@enelit/highlight/highlight-theme';
+@import '@enelit/highlight/highlight-theme';
 
 @include covalent-highlight-theme();
 ```

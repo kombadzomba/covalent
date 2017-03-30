@@ -1,6 +1,6 @@
 {
-  "name": "covalent-enel",
-  "version": "1.0.0-beta.2",
+  "name": "covalent",
+  "version": "1.0.0-beta.2.2",
   "private": false,
   "description": "Teradata UI Platform built on Angular Material 2 - branch importable in Meteor 1.4.3.2",
   "keywords": [

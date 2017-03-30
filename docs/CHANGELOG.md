@@ -568,8 +568,8 @@ After:
 
 Example:
 ```scss
-@import '{}/node_modules/@angular/material/core/theming/all-theme';
-@import '{}/node_modules/@enelit/covalent-core/styles/theming/all-theme';
+@import '@angular/material/core/theming/all-theme';
+@import '@enelit/covalent-core/styles/theming/all-theme';
 
 @include md-core();
 
@@ -747,7 +747,7 @@ Usage:
 
 theme.scss content:
 ```scss
-@import '{}/node_modules/@angular/material/core/theming/all-theme';
+@import '@angular/material/core/theming/all-theme';
 // Plus imports for other components in your app.
 
 // Include the base styles for Angular Material core. We include this here so that you only

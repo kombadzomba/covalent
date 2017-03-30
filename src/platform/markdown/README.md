@@ -63,8 +63,8 @@ export class MyModule {}
 The `markdown` module comes with its own `covalent` theme which uses the material *theme* which is used by importing our theme scss file.
 
 ```css
-@import '{}/node_modules/@angular/material/core/theming/all-theme';
-@import '{}/node_modules/@enelit/markdown/markdown-theme';
+@import '@angular/material/core/theming/all-theme';
+@import '@enelit/markdown/markdown-theme';
 
 @include md-core();
 
