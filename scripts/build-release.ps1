@@ -20,8 +20,7 @@ echo "Compiled TS and generated *.metadata.json files..."
 
 # Clean source .ts files
 cd deploy/
-get-childitem -include *.ts -recurse | foreach ($_) {remove-item $_.fullname}
-get-childitem -include *.d.ts -recurse | foreach ($_) {remove-item $_.fullname}
+get-childitem -include *.ts -Exclude *.d.ts -recurse | foreach ($_) {remove-item $_.fullname}
 cd ..
 echo "Remove source .ts files so they arent published"
 
